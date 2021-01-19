@@ -498,6 +498,17 @@ void PrintConfigDef::init_fff_params()
     def->mode = comExpert;
     def->set_default_value(new ConfigOptionInts{ 0 });
 
+    def = this->add("standby_temperature", coInts);
+    def->label = L("Standby Temperature");
+    def->full_label = L("Filament standby temperature");
+    def->category = OptionCategory::cooling;
+    def->tooltip = L("Filament standby temperature. Note that this setting doesn't do anything, but you can access it in Start G-code, Tool change G-code and the other ones, like for other temperature settings.");
+    def->sidetext = L("°C");
+    def->min = 0;
+    def->max = 300;
+    def->mode = comExpert;
+    def->set_default_value(new ConfigOptionInts{ 0 });
+
     def = this->add("clip_multipart_objects", coBool);
     def->label = L("Clip multi-part objects");
     def->category = OptionCategory::slicing;
@@ -5123,6 +5134,7 @@ void PrintConfigDef::to_prusa(t_config_option_key& opt_key, std::string& value, 
 "brim_ears_pattern",
 "brim_offset",
 "chamber_temperature",
+"standby_temperature",
 "complete_objects_one_skirt",
 "complete_objects_sort",
 "top_fill_pattern",

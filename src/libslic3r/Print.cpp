@@ -77,6 +77,7 @@ bool Print::invalidate_state_by_config_options(const std::vector<t_config_option
         "bed_shape",
         "bed_temperature",
         "chamber_temperature",
+        "standby_temperature",
         "before_layer_gcode",
         "between_objects_gcode",
         "bridge_acceleration",
