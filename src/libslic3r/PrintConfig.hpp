@@ -1223,6 +1223,7 @@ public:
     ConfigOptionFloatOrPercent      bridge_acceleration;
     ConfigOptionInts                bridge_fan_speed;
     ConfigOptionInts                chamber_temperature;
+    ConfigOptionInts                standby_temperature;
     ConfigOptionBool                complete_objects;
     ConfigOptionBool                complete_objects_one_skirt;
     ConfigOptionEnum<CompleteObjectSort> complete_objects_sort;
@@ -1248,6 +1249,7 @@ public:
     ConfigOptionFloatOrPercent      first_layer_speed;
     ConfigOptionFloatOrPercent      first_layer_infill_speed;
     ConfigOptionInts                first_layer_temperature;
+    ConfigOptionInts                filament_
     ConfigOptionInts                full_fan_speed_layer;
     ConfigOptionFloatOrPercent      infill_acceleration;
     ConfigOptionInts                max_fan_speed;
@@ -1318,6 +1320,7 @@ protected:
         OPT_PTR(bridge_acceleration);
         OPT_PTR(bridge_fan_speed);
         OPT_PTR(chamber_temperature);
+        OPT_PTR(standby_temperature);
         OPT_PTR(complete_objects);
         OPT_PTR(complete_objects_one_skirt);
         OPT_PTR(complete_objects_sort);

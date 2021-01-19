@@ -611,7 +611,7 @@ const std::vector<std::string>& Preset::filament_options()
         "filament_toolchange_part_fan_speed",
         "filament_dip_insertion_speed",
         "filament_dip_extraction_speed",  //skinnydip params end
-        "temperature", "first_layer_temperature", "bed_temperature", "first_layer_bed_temperature", 
+        "temperature", "first_layer_temperature", "bed_temperature", "first_layer_bed_temperature",
         "full_fan_speed_layer",
         "cooling",
         "fan_always_on", 
@@ -630,10 +630,11 @@ const std::vector<std::string>& Preset::filament_options()
         "filament_retract_length", "filament_retract_lift", "filament_retract_lift_above", "filament_retract_lift_below", "filament_retract_speed", "filament_deretract_speed", "filament_retract_restart_extra", "filament_retract_before_travel",
         "filament_retract_layer_change", "filament_wipe", "filament_wipe_extra_perimeter", "filament_retract_before_wipe",
         // Profile compatibility
-        "filament_vendor", "compatible_prints", "compatible_prints_condition", "compatible_printers", "compatible_printers_condition", "inherits"
+        "filament_vendor", "compatible_prints", "compatible_prints_condition", "compatible_printers", "compatible_printers_condition", "inherits",
         //merill adds
-        , "filament_wipe_advanced_pigment"
-        , "chamber_temperature"
+        "filament_wipe_advanced_pigment",
+        "chamber_temperature",
+        "standby_temperature",
     };
     return s_opts;
 }
